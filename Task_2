@@ -1,0 +1,13 @@
+a = str(input("Введите ваше словечко/строчечку"))
+def s_palindrome(s):    
+    if len(s) < 1:
+        return True    
+    else: 
+        if s[0] == s[-1]:
+            return s_palindrome(s[1:-1])
+        else:
+            return False
+if (s_palindrome(a) == True):
+    print("ОУ МАЙ! Я АЖ ПРОБЕЛОМ ПОДАВИЛСЯ! ЭТО ЖЕ ПАЛИНДРОМ!")
+else:
+    print("Не, не розумiю, що ви тут запяматовали, це не палиндром!")
