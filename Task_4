@@ -1,0 +1,10 @@
+def max_int(list):
+    big = a[0]
+    position = 0
+    for i in range(len(a)):
+        if (a[i]>big):
+            big = a[i]
+            position = i
+    return big, position
+a = [346, 3215, 754, 2934, 63, 748, 8856, 6211, 8943]
+print (max_int(a))
