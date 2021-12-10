@@ -1,0 +1,10 @@
+line1 = input('Впишите первое слово:')
+line2 = input('Впишите второе слово:')
+new_line1 = line1.replace(" ","")
+new_line2 = line2.replace(" ","")
+def is_anagram(new_line1, new_line2):
+    if sorted(new_line1.lower()) == sorted(new_line2.lower()):
+        return True
+    else:
+        return False     
+print(is_anagram(line1, line2))
