@@ -1,11 +1,7 @@
-import math
-import sys
-sys.setrecursionlimit (10000000)
-n = int(input("В жизни нет смысла, но возможно он есть в выведении чисел столбиком. Введите количество членов"))
 def print_till_zero(n):
-    if  n == 0:
-        return 1
-    else:
-        return n+1 - print_till_zero(n-1)
-for i in range (n):
-    print ("Вот ваше число:", (i+1), print_till_zero(i), "(по заветам Господа: <<Каждой твари по паре>>, поэтому чисел по два, чтобы в одиночку не грустили)")
+    if (n==0):
+        return
+    print(n)
+    n=n-1
+    print_till_zero(n)
+print_till_zero(13)
