@@ -1,0 +1,10 @@
+line = input('Впишите слово:')
+new_line = line.replace(" ","")
+new_new_line = sorted(new_line.lower())
+r = "".join(set(new_new_line))
+def has_duplicates(new_new_line, r):
+    if len(new_new_line) == len(r):
+        return False
+    else:
+        return True
+print(has_duplicates(new_new_line, r))
